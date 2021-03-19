@@ -1,0 +1,98 @@
+{
+    "reference" :
+    {
+        "version" : "3.40.0",
+        "basepath" : "source/3.40.5/"        
+    },
+    "target" :
+    {
+        "version" : "3.3.0",
+        "basepath" : "source/3.10.0/"        
+    },
+    "features" : [
+		{
+			"Id" : 1,
+			"Name" : "UpdateSettings",
+			"Description": "Actualizar las caracteristicas del cms",
+			"Scenarios" : [
+				{
+					"Id" : 1,
+					"Name" : "UpdateTitleDescription",
+					"Description": "Actualizar de forma correcta titulo y descripción"
+				},
+				{
+					"Id" : 2,
+					"Name" : "UpdateTimeZone",
+					"Description": "Actualizar el timezone"
+				},
+				{
+					"Id" : 3,
+					"Name" : "UpdateMetaData",
+					"Description": "Actualizar la metadata de la plataforma"
+				},
+				{
+					"Id" : 4,
+					"Name" : "UpdateTwitterCard",
+					"Description": "Actualizar la información de referencia de twitter"
+				}
+			]
+			
+		},
+		{
+			"Id" : 2,
+			"Name" : "UpdatePost",
+			"Description": "Hacer update de posts dentro del cms",
+			"Scenarios" : [
+				{
+					"Id" : 1,
+					"Name" : "SuccesfullUpdate",
+					"Description": "Hacer update de un post con toda la info correcta."
+				},
+				{
+					"Id" : 2,
+					"Name" : "UpdateWithoutAutor",
+					"Description": "Hacer update de un post sin autor"
+				},
+				{
+					"Id" : 3,
+					"Name" : "UpdatePublishedToDraft",
+					"Description": "Cambiar el estado de un post de published a draft"
+				},
+				{
+					"Id" : 4,
+					"Name" : "UpdateDraftToPublished",
+					"Description": "Cambiar el estado de un post de draft a published"
+				}
+			]
+			
+		},
+		{
+			"Id" : 3,
+			"Name" : "UpdateIntegrations",
+			"Description": "Hacer update diferentes integaraciones",
+			"Scenarios" : [
+				{
+					"Id" : 1,
+					"Name" : "UpdateSlackIntegration",
+					"Description": "Actualizar la información de opearción de slack"
+				},
+				{
+					"Id" : 2,
+					"Name" : "TestSlackNotification",
+					"Description": "Probar la función de envio de notificación de pruebas de slack"
+				},
+				{
+					"Id" : 3,
+					"Name" : "Enable/Disable AMP",
+					"Description": "Habilitar/Deshabilitar AMP para este sitio"
+				},
+				{
+					"Id" : 4,
+					"Name" : "UpdateGoogleTracking",
+					"Description": "Actualizar el track de seguimiento de google"
+				}
+			]
+			
+		}
+    ]
+}
